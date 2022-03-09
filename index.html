@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="image/favicon.ico"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Maze</title>
+  </head>
+  <body>
+    <embed
+      src="audio/"
+      id="music"
+      loop="true"
+      autostart="false"
+      width="2"
+      height="0"
+    />
+    <h4
+      style="
+        margin: 0px;
+        color: whitesmoke;
+        position: relative;
+        top: 10px;
+        left: 20px;
+        font-family: doomRight;
+        font-size: 40px;
+        text-shadow: -1px 0 #b44d33, 0 1px #b44d33, 1px 0 #b44d33,
+          0 -1px #b44d33;
+        color: #080808;
+        letter-spacing: 3px;
+        float: left;
+      "
+    >
+      MUSIC
+    </h4>
+    <label class="switch" onclick="music()">
+      <input type="checkbox" id="musicCheck"/>
+      <span class="slider round"></span>
+    </label>
+    <h1 class="animate__animated animate__rollIn" id="home" onclick="alert()">
+      DO<span style="font-family: DoomRight" onclick="alert()">OM</span> MA<span
+        style="font-family: DoomRight"
+        onclick="alert()"
+        >ZE</span
+      >
+    </h1>
+    <div class="animate__animated animate__rollIn" id="wrapper">
+      <div id="maze" class="">
+        <canvas id="myCanvas" height="550" width="550"></canvas>
+      </div>
+    </div>
+  </body>
+  <script src="js/alert.js"></script>
+  <script src="js/alert2.js"></script>
+  <script src="js/music.js"></script>
+</html>
